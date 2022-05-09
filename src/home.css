@@ -1,6 +1,30 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.head{
+    height:80px;
+    background-color: rgb(9, 9, 90);
+    color:white;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.head button{
+    padding:10px;
+    background-color: white;
+    border:none;
+    width:150px;
+    border-radius: 20px;
+    box-shadow: 8px 18px 25px rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+
+}
+.color{
+    color:red;
+}
+.black{
+    color:black
+}
 .header{
     display:flex;
     justify-content: space-around;
@@ -177,7 +201,7 @@ p{
     }
     .features{
    
-        width:85%;
+        width:90%;
       margin-left: auto;
       margin-right: auto;
         margin-top:30px;
@@ -211,6 +235,10 @@ p{
         flex-direction: column;
         justify-content: space-around;
         border-bottom: 2px solid rgb(192, 188, 188);
+    }
+    .ask{
+        width:90%;
+        margin:20px auto;
     }
     .footer{
         display: flex;

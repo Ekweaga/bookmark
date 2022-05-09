@@ -7,6 +7,7 @@ import hero from './illustration-hero.svg';
 import logobokmak from './logo-bookmark.svg'
 import facebook from './icon-facebook.svg';
 import twitter from './icon-twitter.svg';
+import {Link} from 'react-router-dom'
 
 function Home() {
   const [de, setde] = useState(true)
@@ -28,7 +29,15 @@ function Home() {
     setdeee(true)
   }
   return (
-    <><div>
+    <>
+    <div className='head'>
+    <img src={logobokmak}/>
+    <div>
+    <a href="/bookmark"><button>ADD A URL</button></a> 
+    </div>
+    </div>
+    <div>
+     
       <div className='header'>
         <div className='h1'>
           <h1>  A Simple Bookmark Manager</h1>
@@ -36,7 +45,7 @@ function Home() {
             and see your site load instantly
           </p>
           <div>
-            <button>ADD URL</button>
+          <a href="/bookmark"><button>ADD URL</button></a> 
           </div>
         </div>
         <div className='h2'>
@@ -57,13 +66,13 @@ function Home() {
       <div>
         <div className='links'>
           <ul>
-            <li onClick={deopen}>
+            <li onClick={deopen} className={de ? 'color' : 'black'}>
               Simple Bookmarking
             </li>
-            <li onClick={deeopen}>
+            <li onClick={deeopen} className={dee ? 'color' : 'black'}>
            Speedy Searching
             </li>
-            <li onClick={deeeopen}>
+            <li onClick={deeeopen} className={deee ? 'color' : 'black'}>
              Easy Sharing
             </li>
           </ul>
@@ -115,10 +124,10 @@ function Home() {
         </div>
         <div>
           <ul>
-            <li>What is BookMark</li>
-            <li>Is there a mobile app</li>
-            <li>What is BookMark</li>
-            <li>What is a Bookmarking website</li>
+            <li>What is BookMark ?</li>
+            <li>Is there a mobile app ?</li>
+            <li>What is BookMark ?</li>
+            <li>What is a Bookmarking website ?</li>
            
           </ul>
         </div>

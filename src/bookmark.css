@@ -1,0 +1,38 @@
+.bookhead{
+    height:60px;
+    background-color: blue;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   height:500px;
+}
+.body input{
+    width:200px;
+    margin:15px;
+    padding:10px;
+}
+.body button{
+    background-color:blue;
+    color:white;
+    border:none;
+    width:200px;
+    padding:10px;
+    box-shadow: 8px 18px 25px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .body{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+       height:500px;
+    }
+}
