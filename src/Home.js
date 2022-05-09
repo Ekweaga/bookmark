@@ -36,7 +36,7 @@ function Home() {
             and see your site load instantly
           </p>
           <div>
-            <button>LOGIN</button><button>GET STARTED</button>
+            <button>ADD URL</button>
           </div>
         </div>
         <div className='h2'>
@@ -70,7 +70,7 @@ function Home() {
           <div className='ftlinks'>
           { de && <div className='f1'>
              
-              <img src={illf}/>
+             <div className="imgs"> <img src={illf}/></div>
               <div><h1>Bookmark in one click</h1>
               <p>Orgainze your bookmarks however you want. Our simple drag and drop inteface gives you complete control
                 over how you manage your favourite sites.
@@ -125,6 +125,10 @@ function Home() {
       </div>
 
       <div className='email'>
+        <div><h1>Stay up-to-date with what we are doing</h1></div>
+        <div>
+          <input type='email' placeholder='Enter email'/> <button>Contact Us</button>
+        </div>
 
       </div>
 
