@@ -13,7 +13,7 @@ function App() {
      <Route path="/" exact>
        <Home/>
      </Route>
-     <Route path="/bookmark">
+     <Route path="/bookmark" exact>
        <Bookmark/>
      </Route>
 

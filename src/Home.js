@@ -7,6 +7,9 @@ import hero from './illustration-hero.svg';
 import logobokmak from './logo-bookmark.svg'
 import facebook from './icon-facebook.svg';
 import twitter from './icon-twitter.svg';
+import chrome from './logo-chrome.svg'
+import firefox from './logo-firefox.svg'
+import opera from './logo-opera.svg'
 import {Link} from 'react-router-dom'
 
 function Home() {
@@ -45,7 +48,7 @@ function Home() {
             and see your site load instantly
           </p>
           <div>
-          <a href="/bookmark"><button>ADD URL</button></a> 
+          <Link to="/bookmark"><button>ADD URL</button></Link> 
           </div>
         </div>
         <div className='h2'>
@@ -53,6 +56,7 @@ function Home() {
         </div>
       </div>
     </div><br/>
+    
     <div className='features'>
       <div>
       <h1>Features</h1>
@@ -117,6 +121,50 @@ function Home() {
           
         </div>
       </div>
+     <div className="ext">
+      <div>
+        <h1>Download the extension</h1>
+        <p>We got more browser in the pipeline. Please do let us know if you got a favourite you'd like us to patronize</p>
+        <div className="exts">
+          <div className="ext1">
+              <div>
+                <img src={chrome}/>
+              </div>
+              <div>
+                <h2>Add to Chrome</h2>
+                <p>Maximumm version 6.2</p>
+              </div>
+              <div>
+                <button>Add & Install extension</button>
+              </div>
+          </div>
+          <div className="ext2">
+          <div>
+                <img src={firefox}/>
+              </div>
+              <div>
+                <h2>Add to Firefox</h2>
+                <p>Maximumm version 5.5</p>
+              </div>
+              <div>
+                <button>Add & Install extension</button>
+              </div>
+          </div>
+          <div className="ext3">
+          <div>
+                <img src={opera}/>
+              </div>
+              <div>
+                <h2>Add to Opera</h2>
+                <p>Maximumm version 4.5</p>
+              </div>
+              <div>
+                <button>Add & Install extension</button>
+              </div>
+          </div>
+        </div>
+      </div>
+     </div>
       <div className='ask'>
         <div>
           <h1>Frequently Asked Questions</h1>
@@ -135,7 +183,7 @@ function Home() {
 
       <div className='email'>
         <div><h1>Stay up-to-date with what we are doing</h1></div>
-        <div>
+        <div className="input">
           <input type='email' placeholder='Enter email'/> <button>Contact Us</button>
         </div>
 
