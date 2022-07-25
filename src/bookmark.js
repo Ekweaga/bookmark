@@ -65,11 +65,11 @@ useEffect(()=>{
             </div>
         </div>
         <div style={{display:'flex',flexDirection:'column'}}>
-            <div className="links" >
+{oldcard.length > 1 ?(<div className="links" >
                 <h1 style={{display:'flex',flexDirection:'column'}}>{oldcard.map((card,index)=>{
-                   return <span key={index}><a href={card.linkhref}>{card.linkhref ? card.linkname :null}</a></span>
+                   return <span key={index}>{card.linkhref?<img src={logobokmak}/>:null}<a href={card.linkhref}>{card.linkhref ? card.linkname :null}</a></span>
                 })}</h1>
-            </div>
+            </div>) : <div>No directory added</div>}
         </div>
 
     </div>

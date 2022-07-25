@@ -11,6 +11,7 @@ import chrome from './logo-chrome.svg'
 import firefox from './logo-firefox.svg'
 import opera from './logo-opera.svg'
 import {Link} from 'react-router-dom'
+import Navbar from './navbar';
 
 function Home() {
   const [de, setde] = useState(true)
@@ -33,12 +34,11 @@ function Home() {
   }
   return (
     <>
-    <div className='head'>
-    <img src={logobokmak}/>
-    <div>
-    <a href="/bookmark"><button>ADD A URL</button></a> 
-    </div>
-    </div>
+   
+      <Navbar/>
+  
+    
+    
     <div>
      
       <div className='header'>
